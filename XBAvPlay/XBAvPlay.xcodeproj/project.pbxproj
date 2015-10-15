@@ -14,6 +14,11 @@
 		62F54BE11BCF3DDD008583F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F54BE01BCF3DDD008583F0 /* Images.xcassets */; };
 		62F54BE41BCF3DDD008583F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F54BE21BCF3DDD008583F0 /* LaunchScreen.xib */; };
 		62F54BF01BCF3DDD008583F0 /* XBAvPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F54BEF1BCF3DDD008583F0 /* XBAvPlayTests.m */; };
+		62F54C011BCF3EE8008583F0 /* FullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F54BFB1BCF3EE8008583F0 /* FullView.m */; };
+		62F54C021BCF3EE8008583F0 /* FullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F54BFD1BCF3EE8008583F0 /* FullViewController.m */; };
+		62F54C031BCF3EE8008583F0 /* VideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F54BFF1BCF3EE8008583F0 /* VideoPlayView.m */; };
+		62F54C041BCF3EE8008583F0 /* VideoPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F54C001BCF3EE8008583F0 /* VideoPlayView.xib */; };
+		62F54C061BCF4162008583F0 /* AVPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62F54C051BCF4162008583F0 /* AVPlayer.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		62F54BE91BCF3DDD008583F0 /* XBAvPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBAvPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F54BEE1BCF3DDD008583F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F54BEF1BCF3DDD008583F0 /* XBAvPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBAvPlayTests.m; sourceTree = "<group>"; };
+		62F54BFA1BCF3EE8008583F0 /* FullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullView.h; sourceTree = "<group>"; };
+		62F54BFB1BCF3EE8008583F0 /* FullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullView.m; sourceTree = "<group>"; };
+		62F54BFC1BCF3EE8008583F0 /* FullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullViewController.h; sourceTree = "<group>"; };
+		62F54BFD1BCF3EE8008583F0 /* FullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullViewController.m; sourceTree = "<group>"; };
+		62F54BFE1BCF3EE8008583F0 /* VideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayView.h; sourceTree = "<group>"; };
+		62F54BFF1BCF3EE8008583F0 /* VideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayView.m; sourceTree = "<group>"; };
+		62F54C001BCF3EE8008583F0 /* VideoPlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayView.xib; sourceTree = "<group>"; };
+		62F54C051BCF4162008583F0 /* AVPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AVPlayer.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,7 @@
 		62F54BD21BCF3DDD008583F0 /* XBAvPlay */ = {
 			isa = PBXGroup;
 			children = (
+				62F54BF91BCF3EE8008583F0 /* AVPlayer */,
 				62F54BD71BCF3DDD008583F0 /* AppDelegate.h */,
 				62F54BD81BCF3DDD008583F0 /* AppDelegate.m */,
 				62F54BDA1BCF3DDD008583F0 /* ViewController.h */,
@@ -117,6 +131,22 @@
 				62F54BEE1BCF3DDD008583F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62F54BF91BCF3EE8008583F0 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				62F54C051BCF4162008583F0 /* AVPlayer.bundle */,
+				62F54BFA1BCF3EE8008583F0 /* FullView.h */,
+				62F54BFB1BCF3EE8008583F0 /* FullView.m */,
+				62F54BFC1BCF3EE8008583F0 /* FullViewController.h */,
+				62F54BFD1BCF3EE8008583F0 /* FullViewController.m */,
+				62F54BFE1BCF3EE8008583F0 /* VideoPlayView.h */,
+				62F54BFF1BCF3EE8008583F0 /* VideoPlayView.m */,
+				62F54C001BCF3EE8008583F0 /* VideoPlayView.xib */,
+			);
+			name = AVPlayer;
+			path = ../AVPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +231,8 @@
 			files = (
 				62F54BDF1BCF3DDD008583F0 /* Main.storyboard in Resources */,
 				62F54BE41BCF3DDD008583F0 /* LaunchScreen.xib in Resources */,
+				62F54C061BCF4162008583F0 /* AVPlayer.bundle in Resources */,
+				62F54C041BCF3EE8008583F0 /* VideoPlayView.xib in Resources */,
 				62F54BE11BCF3DDD008583F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F54C031BCF3EE8008583F0 /* VideoPlayView.m in Sources */,
 				62F54BDC1BCF3DDD008583F0 /* ViewController.m in Sources */,
 				62F54BD91BCF3DDD008583F0 /* AppDelegate.m in Sources */,
 				62F54BD61BCF3DDD008583F0 /* main.m in Sources */,
+				62F54C011BCF3EE8008583F0 /* FullView.m in Sources */,
+				62F54C021BCF3EE8008583F0 /* FullViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
